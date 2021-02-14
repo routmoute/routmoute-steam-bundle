@@ -1,0 +1,31 @@
+{
+    "name": "routmoute/routmoute-steam-bundle",
+    "description": "This bundle is simple access to steam OAuth for Symfony 5",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": ["symfony", "bundle", "steam", "authentication", "api", "oauth", "oauth2", "routmoute"],
+    "homepage": "https://github.com/routmoute/RoutmouteSteamBundle",
+    "require": {
+        "php": ">=7.2.5",
+        "symfony/http-client": "^4.4|^5.2",
+        "symfony/yaml": "^4.4|^5.2"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.4|^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Routmoute\\Bundle\\RoutmouteSteamBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Routmoute\\Bundle\\RoutmouteSteamBundle\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": "true"
+        }
+    }
+}
