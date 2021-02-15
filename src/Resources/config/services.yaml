@@ -1,9 +1,9 @@
 services:
-    routmoute-steam-bundle.oauthservice:
-        class: Routmoute\Bundle\RoutmouteSteamBundle\Service\RoutmouteSteamOAuthService
+    routmoute-steam-bundle.apiservice:
+        class: Routmoute\Bundle\RoutmouteSteamBundle\Service\RoutmouteSteamApiService
         autowire: true
         arguments:
             $steam_apikey: '%routmoute_steam.steam_apikey%'
 
-    Routmoute\Bundle\RoutmouteSteamBundle\Service\RoutmouteSteamOAuthService:
-        alias: routmoute-steam-bundle.oauthservice
+    Routmoute\Bundle\RoutmouteSteamBundle\Service\RoutmouteSteamApiService:
+        alias: routmoute-steam-bundle.apiservice
